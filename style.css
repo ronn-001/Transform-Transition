@@ -57,7 +57,7 @@ input[type="radio"] {
 
 header {
     background: linear-gradient(135deg, rgba(15, 6, 30, 0.92), rgba(70, 25, 115, 0.88));
-    padding: 30px 20px;
+    padding: 20px 20px;
     text-align: center;
 }
 
@@ -84,7 +84,7 @@ nav {
     color: white;
     font-size: 16px;
     font-weight: bold;
-    padding: 16px 28px;
+    padding: 10px 28px;
     border-bottom: 4px solid transparent;
     cursor: pointer;
     transition: background 0.3s ease;
