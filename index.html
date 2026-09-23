@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform / Transition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Hidden radio buttons: they remember which slide is showing (no JavaScript needed) -->
+    <input type="radio" name="slide" id="s1" checked>
+    <input type="radio" name="slide" id="s2">
+    <input type="radio" name="slide" id="s3">
+    <input type="radio" name="slide" id="s4">
+    <input type="radio" name="slide" id="s5">
+    <input type="radio" name="slide" id="s6">
+    <input type="radio" name="slide" id="s7">
+    <input type="radio" name="slide" id="s8">
+
+    <!-- Background video -->
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay"></div>
+
+    <header>
+        <h1>CSS Transform / Transition</h1>
+    </header>
+
+    <nav>
+        <label class="tab tab-transform" for="s1">Transform</label>
+        <label class="tab tab-transition" for="s5">Transition</label>
+    </nav>
+
+    <main>
+
+        <div class="slide s1">
+
+            <label class="arrow" for="s4" aria-label="Previous">&#8249;</label>
+
+            <article class="card">
+
+                <div class="card-title">
+                    <h2>Translate</h2>
+                </div>
+
+                <p class="desc">Moves an element from its original position.</p>
+
+                <div class="compare">
+
+                    <div class="panel">
+                        <h3>Before</h3>
+                        <div class="stage before-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>After</h3>
+                        <div class="stage after-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="hint">Hover over the <strong>After</strong> panel to see the effect.</p>
+
+            </article>
+
+            <label class="arrow" for="s2" aria-label="Next">&#8250;</label>
+
+        </div>
+
+        <div class="slide s2">
+
+            <label class="arrow" for="s1" aria-label="Previous">&#8249;</label>
+
+            <article class="card">
+
+                <div class="card-title">
+                    <h2>Rotate</h2>
+                </div>
+
+                <p class="desc">Turns an element around its center.</p>
+
+                <div class="compare">
+
+                    <div class="panel">
+                        <h3>Before</h3>
+                        <div class="stage before-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>After</h3>
+                        <div class="stage after-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="hint">Hover over the <strong>After</strong> panel to see the effect.</p>
+
+            </article>
+
+            <label class="arrow" for="s3" aria-label="Next">&#8250;</label>
+
+        </div>
+
+        <div class="slide s3">
+
+            <label class="arrow" for="s2" aria-label="Previous">&#8249;</label>
+
+            <article class="card">
+
+                <div class="card-title">
+                    <h2>Skew</h2>
+                </div>
+
+                <p class="desc">Slants an element along the X and Y axis.</p>
+
+                <div class="compare">
+
+                    <div class="panel">
+                        <h3>Before</h3>
+                        <div class="stage before-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>After</h3>
+                        <div class="stage after-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="hint">Hover over the <strong>After</strong> panel to see the effect.</p>
+
+            </article>
+
+            <label class="arrow" for="s4" aria-label="Next">&#8250;</label>
+
+        </div>
+
+        <div class="slide s4">
+
+            <label class="arrow" for="s3" aria-label="Previous">&#8249;</label>
+
+            <article class="card">
+
+                <div class="card-title">
+                    <h2>Scale</h2>
+                </div>
+
+                <p class="desc">Makes an element bigger or smaller.</p>
+
+                <div class="compare">
+
+                    <div class="panel">
+                        <h3>Before</h3>
+                        <div class="stage before-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>After</h3>
+                        <div class="stage after-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="hint">Hover over the <strong>After</strong> panel to see the effect.</p>
+
+            </article>
+
+            <label class="arrow" for="s1" aria-label="Next">&#8250;</label>
+
+        </div>
+
+        <div class="slide s5">
+
+            <label class="arrow" for="s8" aria-label="Previous">&#8249;</label>
+
+            <article class="card">
+
+                <div class="card-title">
+                    <h2>Background Color</h2>
+                </div>
+
+                <p class="desc">Smoothly fades from one color to another.</p>
+
+                <div class="compare">
+
+                    <div class="panel">
+                        <h3>Before</h3>
+                        <div class="stage before-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>After</h3>
+                        <div class="stage after-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="hint">Hover over the <strong>After</strong> panel to see the effect.</p>
+
+            </article>
+
+            <label class="arrow" for="s6" aria-label="Next">&#8250;</label>
+
+        </div>
+
+        <div class="slide s6">
+
+            <label class="arrow" for="s5" aria-label="Previous">&#8249;</label>
+
+            <article class="card">
+
+                <div class="card-title">
+                    <h2>Width &amp; Height</h2>
+                </div>
+
+                <p class="desc">Smoothly changes the size of an element.</p>
+
+                <div class="compare">
+
+                    <div class="panel">
+                        <h3>Before</h3>
+                        <div class="stage before-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>After</h3>
+                        <div class="stage after-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="hint">Hover over the <strong>After</strong> panel to see the effect.</p>
+
+            </article>
+
+            <label class="arrow" for="s7" aria-label="Next">&#8250;</label>
+
+        </div>
+
+        <div class="slide s7">
+
+            <label class="arrow" for="s6" aria-label="Previous">&#8249;</label>
+
+            <article class="card">
+
+                <div class="card-title">
+                    <h2>Opacity</h2>
+                </div>
+
+                <p class="desc">Smoothly fades an element in or out.</p>
+
+                <div class="compare">
+
+                    <div class="panel">
+                        <h3>Before</h3>
+                        <div class="stage before-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>After</h3>
+                        <div class="stage after-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="hint">Hover over the <strong>After</strong> panel to see the effect.</p>
+
+            </article>
+
+            <label class="arrow" for="s8" aria-label="Next">&#8250;</label>
+
+        </div>
+
+        <div class="slide s8">
+
+            <label class="arrow" for="s7" aria-label="Previous">&#8249;</label>
+
+            <article class="card">
+
+                <div class="card-title">
+                    <h2>Border Radius</h2>
+                </div>
+
+                <p class="desc">Smoothly turns square corners into round ones.</p>
+
+                <div class="compare">
+
+                    <div class="panel">
+                        <h3>Before</h3>
+                        <div class="stage before-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>After</h3>
+                        <div class="stage after-stage">
+                            <div class="box">Box</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="hint">Hover over the <strong>After</strong> panel to see the effect.</p>
+
+            </article>
+
+            <label class="arrow" for="s5" aria-label="Next">&#8250;</label>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>CSS Transform &bull; CSS Transition</p>
+    </footer>
+
+</body>
+</html>
